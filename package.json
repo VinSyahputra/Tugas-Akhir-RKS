@@ -1,0 +1,26 @@
+{
+  "name": "tugas-akhir-rks",
+  "version": "1.0.0",
+  "description": "SISTEM PENCARIAN RUMAH SAKIT TERDEKAT (CARUKIT) By Havindi Fahru 1800018274 - F",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss style/style.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinSyahputra/Tugas-Akhir-RKS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinSyahputra/Tugas-Akhir-RKS/issues"
+  },
+  "homepage": "https://github.com/VinSyahputra/Tugas-Akhir-RKS#readme",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.2"
+  }
+}
