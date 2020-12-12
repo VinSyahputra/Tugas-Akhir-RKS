@@ -1,1 +1,7 @@
-node_modules/
+!node_modules/
+node_modules/**
+!node_modules/tailwindcss
+!node_modules/postcss-cli
+!node_modules/postcss-functions
+!node_modules/postcss-js
+!node_modules/autoprefixer
