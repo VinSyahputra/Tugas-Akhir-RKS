@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Roboto';
+
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poison';
+
+  src: url(fonts/Poison-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'TypoGrotesk';
+
+  src: url(fonts/TypoGrotesk.otf);
+}
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
@@ -11498,6 +11516,18 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-roboto {
+  font-family: Roboto;
+}
+
+.font-posion {
+  font-family: Poison;
+}
+
+.font-typoGrotesk {
+  font-family: TypoGrotesk;
 }
 
 .font-thin {
@@ -31695,6 +31725,606 @@ video {
           animation: bounce 1s infinite;
 }
 
+.nm-flat-neo-primary-xs {
+  background: #E5F1F2;
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.nm-flat-neo-primary-sm {
+  background: #E5F1F2;
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.nm-flat-neo-primary {
+  background: #E5F1F2;
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.nm-flat-neo-primary-lg {
+  background: #E5F1F2;
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.nm-flat-neo-primary-xl {
+  background: #E5F1F2;
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.nm-flat-neo-secondary-xs {
+  background: #3C6AE1;
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.nm-flat-neo-secondary-sm {
+  background: #3C6AE1;
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.nm-flat-neo-secondary {
+  background: #3C6AE1;
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.nm-flat-neo-secondary-lg {
+  background: #3C6AE1;
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.nm-flat-neo-secondary-xl {
+  background: #3C6AE1;
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.hover\:nm-flat-neo-primary-xs:hover {
+  background: #E5F1F2;
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.hover\:nm-flat-neo-primary-sm:hover {
+  background: #E5F1F2;
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.hover\:nm-flat-neo-primary:hover {
+  background: #E5F1F2;
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.hover\:nm-flat-neo-primary-lg:hover {
+  background: #E5F1F2;
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.hover\:nm-flat-neo-primary-xl:hover {
+  background: #E5F1F2;
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.hover\:nm-flat-neo-secondary-xs:hover {
+  background: #3C6AE1;
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.hover\:nm-flat-neo-secondary-sm:hover {
+  background: #3C6AE1;
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.hover\:nm-flat-neo-secondary:hover {
+  background: #3C6AE1;
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.hover\:nm-flat-neo-secondary-lg:hover {
+  background: #3C6AE1;
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.hover\:nm-flat-neo-secondary-xl:hover {
+  background: #3C6AE1;
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.focus\:nm-flat-neo-primary-xs:focus {
+  background: #E5F1F2;
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.focus\:nm-flat-neo-primary-sm:focus {
+  background: #E5F1F2;
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.focus\:nm-flat-neo-primary:focus {
+  background: #E5F1F2;
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.focus\:nm-flat-neo-primary-lg:focus {
+  background: #E5F1F2;
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.focus\:nm-flat-neo-primary-xl:focus {
+  background: #E5F1F2;
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.focus\:nm-flat-neo-secondary-xs:focus {
+  background: #3C6AE1;
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.focus\:nm-flat-neo-secondary-sm:focus {
+  background: #3C6AE1;
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.focus\:nm-flat-neo-secondary:focus {
+  background: #3C6AE1;
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.focus\:nm-flat-neo-secondary-lg:focus {
+  background: #3C6AE1;
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.focus\:nm-flat-neo-secondary-xl:focus {
+  background: #3C6AE1;
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.nm-concave-neo-primary-xs {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.nm-concave-neo-primary-sm {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.nm-concave-neo-primary {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.nm-concave-neo-primary-lg {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.nm-concave-neo-primary-xl {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.nm-concave-neo-secondary-xs {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.nm-concave-neo-secondary-sm {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.nm-concave-neo-secondary {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.nm-concave-neo-secondary-lg {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.nm-concave-neo-secondary-xl {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.hover\:nm-concave-neo-primary-xs:hover {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.hover\:nm-concave-neo-primary-sm:hover {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.hover\:nm-concave-neo-primary:hover {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.hover\:nm-concave-neo-primary-lg:hover {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.hover\:nm-concave-neo-primary-xl:hover {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.hover\:nm-concave-neo-secondary-xs:hover {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.hover\:nm-concave-neo-secondary-sm:hover {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.hover\:nm-concave-neo-secondary:hover {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.hover\:nm-concave-neo-secondary-lg:hover {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.hover\:nm-concave-neo-secondary-xl:hover {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.focus\:nm-concave-neo-primary-xs:focus {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.focus\:nm-concave-neo-primary-sm:focus {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.focus\:nm-concave-neo-primary:focus {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.focus\:nm-concave-neo-primary-lg:focus {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.focus\:nm-concave-neo-primary-xl:focus {
+  background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.focus\:nm-concave-neo-secondary-xs:focus {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.focus\:nm-concave-neo-secondary-sm:focus {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.focus\:nm-concave-neo-secondary:focus {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.focus\:nm-concave-neo-secondary-lg:focus {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.focus\:nm-concave-neo-secondary-xl:focus {
+  background: linear-gradient(145deg, #1E4DC6, #4873E3);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.nm-convex-neo-primary-xs {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.nm-convex-neo-primary-sm {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.nm-convex-neo-primary {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.nm-convex-neo-primary-lg {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.nm-convex-neo-primary-xl {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.nm-convex-neo-secondary-xs {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.nm-convex-neo-secondary-sm {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.nm-convex-neo-secondary {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.nm-convex-neo-secondary-lg {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.nm-convex-neo-secondary-xl {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.hover\:nm-convex-neo-primary-xs:hover {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.hover\:nm-convex-neo-primary-sm:hover {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.hover\:nm-convex-neo-primary:hover {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.hover\:nm-convex-neo-primary-lg:hover {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.hover\:nm-convex-neo-primary-xl:hover {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.hover\:nm-convex-neo-secondary-xs:hover {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.hover\:nm-convex-neo-secondary-sm:hover {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.hover\:nm-convex-neo-secondary:hover {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.hover\:nm-convex-neo-secondary-lg:hover {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.hover\:nm-convex-neo-secondary-xl:hover {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.focus\:nm-convex-neo-primary-xs:focus {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.focus\:nm-convex-neo-primary-sm:focus {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.focus\:nm-convex-neo-primary:focus {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.focus\:nm-convex-neo-primary-lg:focus {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.focus\:nm-convex-neo-primary-xl:focus {
+  background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.focus\:nm-convex-neo-secondary-xs:focus {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.focus\:nm-convex-neo-secondary-sm:focus {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.focus\:nm-convex-neo-secondary:focus {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.focus\:nm-convex-neo-secondary-lg:focus {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.focus\:nm-convex-neo-secondary-xl:focus {
+  background: linear-gradient(145deg, #4873E3, #1E4DC6);
+  box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.nm-inset-neo-primary-xs {
+  background: #E5F1F2;
+  box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.nm-inset-neo-primary-sm {
+  background: #E5F1F2;
+  box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.nm-inset-neo-primary {
+  background: #E5F1F2;
+  box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.nm-inset-neo-primary-lg {
+  background: #E5F1F2;
+  box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.nm-inset-neo-primary-xl {
+  background: #E5F1F2;
+  box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.nm-inset-neo-secondary-xs {
+  background: #3C6AE1;
+  box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.nm-inset-neo-secondary-sm {
+  background: #3C6AE1;
+  box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.nm-inset-neo-secondary {
+  background: #3C6AE1;
+  box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.nm-inset-neo-secondary-lg {
+  background: #3C6AE1;
+  box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.nm-inset-neo-secondary-xl {
+  background: #3C6AE1;
+  box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.hover\:nm-inset-neo-primary-xs:hover {
+  background: #E5F1F2;
+  box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.hover\:nm-inset-neo-primary-sm:hover {
+  background: #E5F1F2;
+  box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.hover\:nm-inset-neo-primary:hover {
+  background: #E5F1F2;
+  box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.hover\:nm-inset-neo-primary-lg:hover {
+  background: #E5F1F2;
+  box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.hover\:nm-inset-neo-primary-xl:hover {
+  background: #E5F1F2;
+  box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.hover\:nm-inset-neo-secondary-xs:hover {
+  background: #3C6AE1;
+  box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.hover\:nm-inset-neo-secondary-sm:hover {
+  background: #3C6AE1;
+  box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.hover\:nm-inset-neo-secondary:hover {
+  background: #3C6AE1;
+  box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.hover\:nm-inset-neo-secondary-lg:hover {
+  background: #3C6AE1;
+  box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.hover\:nm-inset-neo-secondary-xl:hover {
+  background: #3C6AE1;
+  box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
+.focus\:nm-inset-neo-primary-xs:focus {
+  background: #E5F1F2;
+  box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+}
+
+.focus\:nm-inset-neo-primary-sm:focus {
+  background: #E5F1F2;
+  box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+}
+
+.focus\:nm-inset-neo-primary:focus {
+  background: #E5F1F2;
+  box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+}
+
+.focus\:nm-inset-neo-primary-lg:focus {
+  background: #E5F1F2;
+  box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+}
+
+.focus\:nm-inset-neo-primary-xl:focus {
+  background: #E5F1F2;
+  box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+}
+
+.focus\:nm-inset-neo-secondary-xs:focus {
+  background: #3C6AE1;
+  box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+}
+
+.focus\:nm-inset-neo-secondary-sm:focus {
+  background: #3C6AE1;
+  box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+}
+
+.focus\:nm-inset-neo-secondary:focus {
+  background: #3C6AE1;
+  box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+}
+
+.focus\:nm-inset-neo-secondary-lg:focus {
+  background: #3C6AE1;
+  box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+}
+
+.focus\:nm-inset-neo-secondary-xl:focus {
+  background: #3C6AE1;
+  box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -42648,6 +43278,18 @@ video {
 
   .sm\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-roboto {
+    font-family: Roboto;
+  }
+
+  .sm\:font-posion {
+    font-family: Poison;
+  }
+
+  .sm\:font-typoGrotesk {
+    font-family: TypoGrotesk;
   }
 
   .sm\:font-thin {
@@ -62765,6 +63407,606 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .sm\:nm-flat-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-flat-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-flat-neo-primary {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-flat-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-flat-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-flat-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:nm-flat-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:nm-flat-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:nm-flat-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:nm-flat-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-flat-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-flat-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-flat-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-flat-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-flat-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-flat-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-flat-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-flat-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-flat-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-flat-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-flat-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-flat-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-flat-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-flat-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-flat-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-flat-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-flat-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-flat-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-flat-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-flat-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:nm-concave-neo-primary-xs {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-concave-neo-primary-sm {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-concave-neo-primary {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-concave-neo-primary-lg {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-concave-neo-primary-xl {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-concave-neo-secondary-xs {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:nm-concave-neo-secondary-sm {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:nm-concave-neo-secondary {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:nm-concave-neo-secondary-lg {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:nm-concave-neo-secondary-xl {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-concave-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-concave-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-concave-neo-primary:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-concave-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-concave-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-concave-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-concave-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-concave-neo-secondary:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-concave-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-concave-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-concave-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-concave-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-concave-neo-primary:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-concave-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-concave-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-concave-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-concave-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-concave-neo-secondary:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-concave-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-concave-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:nm-convex-neo-primary-xs {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-convex-neo-primary-sm {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-convex-neo-primary {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-convex-neo-primary-lg {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-convex-neo-primary-xl {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-convex-neo-secondary-xs {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:nm-convex-neo-secondary-sm {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:nm-convex-neo-secondary {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:nm-convex-neo-secondary-lg {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:nm-convex-neo-secondary-xl {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-convex-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-convex-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-convex-neo-primary:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-convex-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-convex-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-convex-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-convex-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-convex-neo-secondary:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-convex-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-convex-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-convex-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-convex-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-convex-neo-primary:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-convex-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-convex-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-convex-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-convex-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-convex-neo-secondary:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-convex-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-convex-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:nm-inset-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-inset-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-inset-neo-primary {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-inset-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-inset-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:nm-inset-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:nm-inset-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:nm-inset-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:nm-inset-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:nm-inset-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-inset-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-inset-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-inset-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-inset-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-inset-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:hover\:nm-inset-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-inset-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-inset-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-inset-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:hover\:nm-inset-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-inset-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-inset-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-inset-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-inset-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-inset-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .sm\:focus\:nm-inset-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-inset-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-inset-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-inset-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .sm\:focus\:nm-inset-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
 }
 
 @media (min-width: 768px) {
@@ -73720,6 +74962,18 @@ video {
 
   .md\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-roboto {
+    font-family: Roboto;
+  }
+
+  .md\:font-posion {
+    font-family: Poison;
+  }
+
+  .md\:font-typoGrotesk {
+    font-family: TypoGrotesk;
   }
 
   .md\:font-thin {
@@ -93837,6 +95091,606 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .md\:nm-flat-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:nm-flat-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:nm-flat-neo-primary {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:nm-flat-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:nm-flat-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:nm-flat-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:nm-flat-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:nm-flat-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:nm-flat-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:nm-flat-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-flat-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-flat-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-flat-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-flat-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-flat-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-flat-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-flat-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-flat-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-flat-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-flat-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-flat-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-flat-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-flat-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-flat-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-flat-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-flat-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-flat-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-flat-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-flat-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-flat-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:nm-concave-neo-primary-xs {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:nm-concave-neo-primary-sm {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:nm-concave-neo-primary {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:nm-concave-neo-primary-lg {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:nm-concave-neo-primary-xl {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:nm-concave-neo-secondary-xs {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:nm-concave-neo-secondary-sm {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:nm-concave-neo-secondary {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:nm-concave-neo-secondary-lg {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:nm-concave-neo-secondary-xl {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-concave-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-concave-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-concave-neo-primary:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-concave-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-concave-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-concave-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-concave-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-concave-neo-secondary:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-concave-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-concave-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-concave-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-concave-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-concave-neo-primary:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-concave-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-concave-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-concave-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-concave-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-concave-neo-secondary:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-concave-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-concave-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:nm-convex-neo-primary-xs {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:nm-convex-neo-primary-sm {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:nm-convex-neo-primary {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:nm-convex-neo-primary-lg {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:nm-convex-neo-primary-xl {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:nm-convex-neo-secondary-xs {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:nm-convex-neo-secondary-sm {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:nm-convex-neo-secondary {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:nm-convex-neo-secondary-lg {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:nm-convex-neo-secondary-xl {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-convex-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-convex-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-convex-neo-primary:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-convex-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-convex-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-convex-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-convex-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-convex-neo-secondary:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-convex-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-convex-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-convex-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-convex-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-convex-neo-primary:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-convex-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-convex-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-convex-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-convex-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-convex-neo-secondary:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-convex-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-convex-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:nm-inset-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:nm-inset-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:nm-inset-neo-primary {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:nm-inset-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:nm-inset-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:nm-inset-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:nm-inset-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:nm-inset-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:nm-inset-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:nm-inset-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-inset-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-inset-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-inset-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-inset-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-inset-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:hover\:nm-inset-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-inset-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-inset-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-inset-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:hover\:nm-inset-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-inset-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-inset-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-inset-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-inset-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-inset-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .md\:focus\:nm-inset-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-inset-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-inset-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-inset-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .md\:focus\:nm-inset-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -104792,6 +106646,18 @@ video {
 
   .lg\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .lg\:font-roboto {
+    font-family: Roboto;
+  }
+
+  .lg\:font-posion {
+    font-family: Poison;
+  }
+
+  .lg\:font-typoGrotesk {
+    font-family: TypoGrotesk;
   }
 
   .lg\:font-thin {
@@ -124909,6 +126775,606 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .lg\:nm-flat-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-flat-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-flat-neo-primary {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-flat-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-flat-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-flat-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:nm-flat-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:nm-flat-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:nm-flat-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:nm-flat-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-flat-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-flat-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-flat-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-flat-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-flat-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-flat-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-flat-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-flat-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-flat-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-flat-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-flat-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-flat-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-flat-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-flat-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-flat-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-flat-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-flat-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-flat-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-flat-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-flat-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:nm-concave-neo-primary-xs {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-concave-neo-primary-sm {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-concave-neo-primary {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-concave-neo-primary-lg {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-concave-neo-primary-xl {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-concave-neo-secondary-xs {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:nm-concave-neo-secondary-sm {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:nm-concave-neo-secondary {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:nm-concave-neo-secondary-lg {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:nm-concave-neo-secondary-xl {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-concave-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-concave-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-concave-neo-primary:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-concave-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-concave-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-concave-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-concave-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-concave-neo-secondary:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-concave-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-concave-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-concave-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-concave-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-concave-neo-primary:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-concave-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-concave-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-concave-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-concave-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-concave-neo-secondary:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-concave-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-concave-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:nm-convex-neo-primary-xs {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-convex-neo-primary-sm {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-convex-neo-primary {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-convex-neo-primary-lg {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-convex-neo-primary-xl {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-convex-neo-secondary-xs {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:nm-convex-neo-secondary-sm {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:nm-convex-neo-secondary {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:nm-convex-neo-secondary-lg {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:nm-convex-neo-secondary-xl {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-convex-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-convex-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-convex-neo-primary:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-convex-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-convex-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-convex-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-convex-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-convex-neo-secondary:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-convex-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-convex-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-convex-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-convex-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-convex-neo-primary:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-convex-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-convex-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-convex-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-convex-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-convex-neo-secondary:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-convex-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-convex-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:nm-inset-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-inset-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-inset-neo-primary {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-inset-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-inset-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:nm-inset-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:nm-inset-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:nm-inset-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:nm-inset-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:nm-inset-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-inset-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-inset-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-inset-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-inset-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-inset-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:hover\:nm-inset-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-inset-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-inset-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-inset-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:hover\:nm-inset-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-inset-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-inset-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-inset-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-inset-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-inset-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .lg\:focus\:nm-inset-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-inset-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-inset-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-inset-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .lg\:focus\:nm-inset-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -135864,6 +138330,18 @@ video {
 
   .xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-roboto {
+    font-family: Roboto;
+  }
+
+  .xl\:font-posion {
+    font-family: Poison;
+  }
+
+  .xl\:font-typoGrotesk {
+    font-family: TypoGrotesk;
   }
 
   .xl\:font-thin {
@@ -155981,6 +158459,606 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .xl\:nm-flat-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-flat-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-flat-neo-primary {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-flat-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-flat-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-flat-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:nm-flat-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:nm-flat-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:nm-flat-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:nm-flat-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-flat-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-flat-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-flat-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-flat-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-flat-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-flat-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-flat-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-flat-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-flat-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-flat-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-flat-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-flat-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-flat-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-flat-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-flat-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-flat-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-flat-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-flat-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-flat-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-flat-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:nm-concave-neo-primary-xs {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-concave-neo-primary-sm {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-concave-neo-primary {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-concave-neo-primary-lg {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-concave-neo-primary-xl {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-concave-neo-secondary-xs {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:nm-concave-neo-secondary-sm {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:nm-concave-neo-secondary {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:nm-concave-neo-secondary-lg {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:nm-concave-neo-secondary-xl {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-concave-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-concave-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-concave-neo-primary:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-concave-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-concave-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-concave-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-concave-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-concave-neo-secondary:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-concave-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-concave-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-concave-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-concave-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-concave-neo-primary:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-concave-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-concave-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-concave-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-concave-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-concave-neo-secondary:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-concave-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-concave-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:nm-convex-neo-primary-xs {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-convex-neo-primary-sm {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-convex-neo-primary {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-convex-neo-primary-lg {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-convex-neo-primary-xl {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-convex-neo-secondary-xs {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:nm-convex-neo-secondary-sm {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:nm-convex-neo-secondary {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:nm-convex-neo-secondary-lg {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:nm-convex-neo-secondary-xl {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-convex-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-convex-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-convex-neo-primary:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-convex-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-convex-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-convex-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-convex-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-convex-neo-secondary:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-convex-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-convex-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-convex-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-convex-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-convex-neo-primary:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-convex-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-convex-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-convex-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-convex-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-convex-neo-secondary:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-convex-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-convex-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:nm-inset-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-inset-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-inset-neo-primary {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-inset-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-inset-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:nm-inset-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:nm-inset-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:nm-inset-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:nm-inset-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:nm-inset-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-inset-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-inset-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-inset-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-inset-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-inset-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:hover\:nm-inset-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-inset-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-inset-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-inset-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:hover\:nm-inset-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-inset-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-inset-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-inset-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-inset-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-inset-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .xl\:focus\:nm-inset-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-inset-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-inset-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-inset-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .xl\:focus\:nm-inset-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -166936,6 +170014,18 @@ video {
 
   .\32xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .\32xl\:font-roboto {
+    font-family: Roboto;
+  }
+
+  .\32xl\:font-posion {
+    font-family: Poison;
+  }
+
+  .\32xl\:font-typoGrotesk {
+    font-family: TypoGrotesk;
   }
 
   .\32xl\:font-thin {
@@ -187052,5 +190142,605 @@ video {
   .\32xl\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .\32xl\:nm-flat-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-flat-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-flat-neo-primary {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-flat-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-flat-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-flat-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-flat-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-flat-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-flat-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-flat-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-flat-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-flat-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-concave-neo-primary-xs {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-concave-neo-primary-sm {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-concave-neo-primary {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-concave-neo-primary-lg {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-concave-neo-primary-xl {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-concave-neo-secondary-xs {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-concave-neo-secondary-sm {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-concave-neo-secondary {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-concave-neo-secondary-lg {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-concave-neo-secondary-xl {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-primary:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-secondary:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-concave-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-primary:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #B6D8DA, #FFFFFF);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-secondary:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-concave-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #1E4DC6, #4873E3);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-convex-neo-primary-xs {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-convex-neo-primary-sm {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-convex-neo-primary {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-convex-neo-primary-lg {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-convex-neo-primary-xl {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-convex-neo-secondary-xs {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-convex-neo-secondary-sm {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-convex-neo-secondary {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-convex-neo-secondary-lg {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-convex-neo-secondary-xl {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-primary-xs:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-primary-sm:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-primary:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-primary-lg:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-primary-xl:hover {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-secondary-xs:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-secondary-sm:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-secondary:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-secondary-lg:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-convex-neo-secondary-xl:hover {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-primary-xs:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #97C7CB, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-primary-sm:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #97C7CB, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-primary:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #97C7CB, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-primary-lg:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #97C7CB, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-primary-xl:focus {
+    background: linear-gradient(145deg, #FFFFFF, #B6D8DA);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #97C7CB, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-secondary-xs:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.05em 0.05em calc(0.05em * 2) #1B43AD, calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-secondary-sm:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.1em 0.1em calc(0.1em * 2) #1B43AD, calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-secondary:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.2em 0.2em calc(0.2em * 2) #1B43AD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-secondary-lg:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.4em 0.4em calc(0.4em * 2) #1B43AD, calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-convex-neo-secondary-xl:focus {
+    background: linear-gradient(145deg, #4873E3, #1E4DC6);
+    box-shadow: 0.8em 0.8em calc(0.8em * 2) #1B43AD, calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-inset-neo-primary-xs {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-inset-neo-primary-sm {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-inset-neo-primary {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-inset-neo-primary-lg {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-inset-neo-primary-xl {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:nm-inset-neo-secondary-xs {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-inset-neo-secondary-sm {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-inset-neo-secondary {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-inset-neo-secondary-lg {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:nm-inset-neo-secondary-xl {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-primary-xs:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-primary-sm:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-primary:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-primary-lg:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-primary-xl:hover {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-secondary-xs:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-secondary-sm:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-secondary:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-secondary-lg:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:hover\:nm-inset-neo-secondary-xl:hover {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-primary-xs:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #97C7CB, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-primary-sm:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #97C7CB, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-primary:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #97C7CB, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-primary-lg:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #97C7CB, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-primary-xl:focus {
+    background: #E5F1F2;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #97C7CB, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #FFFFFF;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-secondary-xs:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.05em 0.05em calc(0.05em * 2) #1B43AD, inset calc(0.05em * -1) calc(0.05em * -1) calc(0.05em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-secondary-sm:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.1em 0.1em calc(0.1em * 2) #1B43AD, inset calc(0.1em * -1) calc(0.1em * -1) calc(0.1em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-secondary:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.2em 0.2em calc(0.2em * 2) #1B43AD, inset calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-secondary-lg:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.4em 0.4em calc(0.4em * 2) #1B43AD, inset calc(0.4em * -1) calc(0.4em * -1) calc(0.4em * 2) #7A99EB;
+  }
+
+  .\32xl\:focus\:nm-inset-neo-secondary-xl:focus {
+    background: #3C6AE1;
+    box-shadow: inset 0.8em 0.8em calc(0.8em * 2) #1B43AD, inset calc(0.8em * -1) calc(0.8em * -1) calc(0.8em * 2) #7A99EB;
   }
 }

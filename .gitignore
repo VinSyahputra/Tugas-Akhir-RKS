@@ -1,6 +1,7 @@
 !node_modules/
 node_modules/**
 !node_modules/tailwindcss
+!node_modules/tailwindcss-neumorphism
 !node_modules/postcss-cli
 !node_modules/postcss-functions
 !node_modules/postcss-js

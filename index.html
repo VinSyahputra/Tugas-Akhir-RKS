@@ -4,14 +4,57 @@
 <meta name="viewport" content="initial-scale=1, width=device-width">
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="public/build/tailwind.css">
+<style>
+    .home-page::before{
+        content:'';
+        position: absolute;
+        top: 5px;
+        right: -20px;
+        width: 60px;
+        height: 60px;
+        opacity: .4;
+        transform: rotate(-60deg);
+        background: url('img/catatan.svg')no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    @font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'Poison';
+        src: url(fonts/Poison-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'TypoGrotesk';
+        src: url(fonts/TypoGrotesk.otf);
+    }
+    .Poison{
+        font-family: Poison;
+    }
+</style>
 <title>Vin. Site</title>
 </head>
 <body>
 
-    <div class="home-page bg-primary h-screen w-full p-10">
-        <p class="text-dark font-mono tracking-wider text-center text-2xl">CARUKIT</p>
-        <p class=" text-center text-xs font-thin">Aplikasi yang dikembangkan untuk memudahkan masyarakat dalam mencari Rumah Sakit terdekat</p>
-        <button class="bg-secondary text-purple-500 my-4 py-1 px-6 rounded-md w-full">CARI</button>
+    <div class="container mx-auto">
+        <div class="home-page bg-primary h-screen w-full p-10 relative overflow-hidden">
+            <p class="text-dark font-mono tracking-wider text-center text-2xl">CARUKIT</p>
+            <p class=" text-center text-xs font-thin Poison">Aplikasi yang dikembangkan untuk memudahkan masyarakat dalam mencari Rumah Sakit terdekat</p>
+            <img src="img/dokter.png" alt="" class="w-2/3 h-auto mx-auto my-2">
+            <div class="wrap-hospital justify-evenly flex my-4">
+                <div class="swasta text-dark h-20 w-20 bg-white rounded-md nm-flat-neo-primary-sm flex justify-center items-center flex-col">
+                    <h2 class="text-2xl tacking-wider">6</h2>
+                    <h3 class="text-sm Poison">NEGERI</h3>
+                </div>
+                <div class="negeri text-dark h-20 w-20 bg-white rounded-md nm-flat-neo-primary-sm flex justify-center items-center flex-col">
+                    <h2 class="text-2xl tacking-wider">24</h2>
+                    <h3 class="text-sm Poison">SWASTA</h3>
+                </div>
+            </div>
+            <button class="bg-secondary text-white my-4 py-1 px-6 rounded-md w-full tracking-wider">CARI</button>
+        </div>
     </div>
 
 <script></script>
