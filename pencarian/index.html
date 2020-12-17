@@ -3,20 +3,21 @@
 <head>
 <meta name="viewport" content="initial-scale=1, width=device-width">
 <meta charset="UTF-8">
+<link rel="icon" type="image/icon" href="../img/icon.png">
 <link rel="stylesheet" type="text/css" href="../public/build/tailwind.css">
 <title>Vin. Site</title>
 <style>
     @font-face {
         font-family: 'Roboto';
-        src: url(fonts/Roboto-Regular.ttf);
+        src: url(../fonts/Roboto-Regular.ttf);
     }
     @font-face {
         font-family: 'Poison';
-        src: url(fonts/Poison-Regular.ttf);
+        src: url(../fonts/Poison-Regular.ttf);
     }
     @font-face {
         font-family: 'TypoGrotesk';
-        src: url(fonts/TypoGrotesk.otf);
+        src: url(../fonts/TypoGrotesk.otf);
     }
     .Poison{
         font-family: Poison;
@@ -31,10 +32,90 @@
 </head>
 <body>
 
-    <div class="pencarian-page bg-primary h-screen w-full p-10 relative overflow-hidden grid place-items-center">
-        
+    <div class="pencarian-page bg-primary h-screen max-h-full w-full px-6 sm:px-12 py-10 relative overflow-y-auto flex flex-col items-center">
+
+        <span class="back w-6 sm:w-8 h-auto absolute top-3 left-3 sm:top-5 sm:left-5 transform transition ease-out duration-75 hover:scale-95 inline-block cursor-pointer">
+            <img src="../img/arrow.svg" alt="" class="w-full h-auto">
+        </span>
+
+        <h2 class="Roboto tracking-wider">HASIL PENCARIAN</h2>
+
+        <div class="hasil flex flex-col items-center gap-6 md:gap-8 mt-4 h-auto w-full py-4 pb-10">
+
+            <div class="box w-full md:w-2/3 h-40 bg-white shadow-lg flex rounded-md overflow-hidden p-2 gap-2">
+                <div class="left w-2/5 sm:w-1/4 h-full grid items-center">
+                    <img src="../img/bethesda.jpg" alt="" class="img w-24 h-20 sm:w-36 sm:h-32">
+                </div>
+                <div class="right w-3/5 sm:w-3/4 h-full text-xs overflow-y-auto Poison relative">
+                    <div class="deskripsi h-3/4 overflow-y-auto p-2">
+                        <h3 class="font-bold text-center lg:text-lg">RS Bethesda</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad sequi quisquam ipsam modi omnis beatae doloremque. Sunt dolore expedita eius quae, id odio cupiditate officia explicabo nesciunt a optio.</p>
+                    </div>
+                    <div class="btn-group flex items-center flex-row-reverse gap-2 mt-1 pr-2 pt-2 border-gray-500 border-t">
+                        <button class="btn-primary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-blue-700">MENUJU</button>
+                        <button class="btn-secondary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-gray-200">INFO</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box w-full md:w-2/3 h-40 bg-white shadow-lg flex rounded-md overflow-hidden p-2 gap-2">
+                <div class="left w-2/5 sm:w-1/4 h-full grid items-center">
+                    <img src="../img/hidayatullah.jpg" alt="" class="img w-24 h-20 sm:w-36 sm:h-32">
+                </div>
+                <div class="right w-3/5 sm:w-3/4 h-full text-xs overflow-y-auto Poison relative">
+                    <div class="deskripsi h-3/4 overflow-y-auto p-2">
+                        <h3 class="font-bold text-center lg:text-lg">RS Hidayatullah</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad sequi quisquam ipsam modi omnis beatae doloremque. Sunt dolore expedita eius quae, id odio cupiditate officia explicabo nesciunt a optio.</p>
+                    </div>
+                    <div class="btn-group flex items-center flex-row-reverse gap-2 mt-1 pr-2 pt-2 border-gray-500 border-t">
+                        <button class="btn-primary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-blue-700">MENUJU</button>
+                        <button class="btn-secondary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-gray-200">INFO</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box w-full md:w-2/3 h-40 bg-white shadow-lg flex rounded-md overflow-hidden p-2 gap-2">
+                <div class="left w-2/5 sm:w-1/4 h-full grid items-center">
+                    <img src="../img/happyland.webp" alt="" class="img w-24 h-20 sm:w-36 sm:h-32">
+                </div>
+                <div class="right w-3/5 sm:w-3/4 h-full text-xs overflow-y-auto Poison relative">
+                    <div class="deskripsi h-3/4 overflow-y-auto p-2">
+                        <h3 class="font-bold text-center lg:text-lg">RS Happyland</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad sequi quisquam ipsam modi omnis beatae doloremque. Sunt dolore expedita eius quae, id odio cupiditate officia explicabo nesciunt a optio.</p>
+                    </div>
+                    <div class="btn-group flex items-center flex-row-reverse gap-2 mt-1 pr-2 pt-2 border-gray-500 border-t">
+                        <button class="btn-primary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-blue-700">MENUJU</button>
+                        <button class="btn-secondary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-gray-200">INFO</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box w-full md:w-2/3 h-40 bg-white shadow-lg flex rounded-md overflow-hidden p-2 gap-2">
+                <div class="left w-2/5 sm:w-1/4 h-full grid items-center">
+                    <img src="../img/parahita.jpg" alt="" class="img w-24 h-20 sm:w-36 sm:h-32">
+                </div>
+                <div class="right w-3/5 sm:w-3/4 h-full text-xs overflow-y-auto Poison relative">
+                    <div class="deskripsi h-3/4 overflow-y-auto p-2">
+                        <h3 class="font-bold text-center lg:text-lg">RS Parahita</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad sequi quisquam ipsam modi omnis beatae doloremque. Sunt dolore expedita eius quae, id odio cupiditate officia explicabo nesciunt a optio.</p>
+                    </div>
+                    <div class="btn-group flex items-center flex-row-reverse gap-2 mt-1 pr-2 pt-2 border-gray-500 border-t">
+                        <button class="btn-primary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-blue-700">MENUJU</button>
+                        <button class="btn-secondary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-gray-200">INFO</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-<script></script>
+<script>
+    let back = document.querySelector('.back');
+
+    back.addEventListener('click',e=>{
+        e.preventDefault();
+        document.location.href = '../index.html';
+    });
+</script>
 </body>
 </html>

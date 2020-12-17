@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="initial-scale=1, width=device-width">
 <meta charset="UTF-8">
+<link rel="icon" type="image/icon" href="img/icon.png">
 <link rel="stylesheet" type="text/css" href="public/build/tailwind.css">
 <style>
     .home-page::before{
@@ -48,8 +49,8 @@
         <div class="alert fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col border-secondary border-2 bg-white rounded-md p-5 hidden">
             <h2 class="Roboto font-bold tracking-wider w-2/3 text-center mx-auto text-secondary">KELUAR DARI APLIKASI ?</h2>
             <div class="action flex justify-center items-center gap-5 mt-4">
-                <button class="tidak btn-secondary hover:scale-95 hover:bg-gray-100">TIDAK</button>
-                <button class="ya btn-primary hover:scale-95 hover:bg-blue-700">YA</button>
+                <button class="tidak px-6 py-2 btn-secondary hover:scale-95 hover:bg-gray-100">TIDAK</button>
+                <button class="ya px-6 py-2 btn-primary hover:scale-95 hover:bg-blue-700">YA</button>
             </div>
         </div>
         <p class="text-secondary font-mono tracking-wider text-center text-2xl sm:text-4xl md:text-5xl">CARUKIT</p>
@@ -65,9 +66,16 @@
                 <h3 class="text-sm Poison">SWASTA</h3>
             </div>
         </div>
-        <button class="bg-secondary text-white my-4 py-1 px-6 rounded-md w-full max-w-xs tracking-wider transition duration-75 ease-in transform focus:scale-95 focus:bg-blue-700 hover:bg-blue-700">CARI</button>
+        <button class="cari bg-secondary text-white my-4 py-1 md:py-2 px-6 rounded-md w-full max-w-xs tracking-wider transition duration-75 ease-in transform focus:scale-95 focus:bg-blue-700 hover:bg-blue-700">CARI</button>
     </div>
 
-<script></script>
+<script>
+    let cari = document.querySelector('button.cari');
+
+    cari.addEventListener('click',e=>{
+        e.preventDefault();
+        document.location.href = 'pencarian/index.html';
+    });
+</script>
 </body>
 </html>
