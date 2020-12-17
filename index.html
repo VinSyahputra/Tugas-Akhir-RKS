@@ -19,8 +19,8 @@
         background-size: 100%;
     }
     @font-face {
-    font-family: 'Roboto';
-    src: url(fonts/Roboto-Regular.ttf);
+        font-family: 'Roboto';
+        src: url(fonts/Roboto-Regular.ttf);
     }
     @font-face {
         font-family: 'Poison';
@@ -33,28 +33,39 @@
     .Poison{
         font-family: Poison;
     }
+    .Roboto{
+        font-family: Roboto;
+    }
+    .TypoGrotesk{
+        font-family: TypoGrotesk;
+    }
 </style>
 <title>Vin. Site</title>
 </head>
 <body>
 
-    <div class="container mx-auto">
-        <div class="home-page bg-primary h-screen w-full p-10 relative overflow-hidden">
-            <p class="text-dark font-mono tracking-wider text-center text-2xl">CARUKIT</p>
-            <p class=" text-center text-xs font-thin Poison">Aplikasi yang dikembangkan untuk memudahkan masyarakat dalam mencari Rumah Sakit terdekat</p>
-            <img src="img/dokter.png" alt="" class="w-2/3 h-auto mx-auto my-2">
-            <div class="wrap-hospital justify-evenly flex my-4">
-                <div class="swasta text-dark h-20 w-20 bg-white rounded-md nm-flat-neo-primary-sm flex justify-center items-center flex-col">
-                    <h2 class="text-2xl tacking-wider">6</h2>
-                    <h3 class="text-sm Poison">NEGERI</h3>
-                </div>
-                <div class="negeri text-dark h-20 w-20 bg-white rounded-md nm-flat-neo-primary-sm flex justify-center items-center flex-col">
-                    <h2 class="text-2xl tacking-wider">24</h2>
-                    <h3 class="text-sm Poison">SWASTA</h3>
-                </div>
+    <div class="home-page bg-primary h-screen w-full p-10 relative overflow-hidden grid place-items-center">
+        <div class="alert fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col border-secondary border-2 bg-white rounded-md p-5 hidden">
+            <h2 class="Roboto font-bold tracking-wider w-2/3 text-center mx-auto text-secondary">KELUAR DARI APLIKASI ?</h2>
+            <div class="action flex justify-center items-center gap-5 mt-4">
+                <button class="tidak btn-secondary hover:scale-95 hover:bg-gray-100">TIDAK</button>
+                <button class="ya btn-primary hover:scale-95 hover:bg-blue-700">YA</button>
             </div>
-            <button class="bg-secondary text-white my-4 py-1 px-6 rounded-md w-full tracking-wider">CARI</button>
         </div>
+        <p class="text-secondary font-mono tracking-wider text-center text-2xl sm:text-4xl md:text-5xl">CARUKIT</p>
+        <p class=" text-center text-xs md:text-base font-thin Poison text-dark max-w-xs tracking-wide">Aplikasi yang dikembangkan untuk memudahkan masyarakat dalam mencari Rumah Sakit terdekat</p>
+        <img src="img/dokter.png" alt="" class="w-48 h-auto sm:w-52 mx-auto my-2">
+        <div class="wrap-hospital justify-center gap-4 flex my-4">
+            <div class="swasta select-none text-dark h-20 w-20 bg-white rounded-md nm-flat-neo-primary-sm flex justify-center items-center flex-col">
+                <h2 class="text-2xl tacking-wider">6</h2>
+                <h3 class="text-sm Poison">NEGERI</h3>
+            </div>
+            <div class="negeri select-none text-dark h-20 w-20 bg-white rounded-md nm-flat-neo-primary-sm flex justify-center items-center flex-col">
+                <h2 class="text-2xl tacking-wider">24</h2>
+                <h3 class="text-sm Poison">SWASTA</h3>
+            </div>
+        </div>
+        <button class="bg-secondary text-white my-4 py-1 px-6 rounded-md w-full max-w-xs tracking-wider transition duration-75 ease-in transform focus:scale-95 focus:bg-blue-700 hover:bg-blue-700">CARI</button>
     </div>
 
 <script></script>
