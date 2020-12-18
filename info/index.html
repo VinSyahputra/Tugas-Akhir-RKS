@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="initial-scale=1, width=device-width">
+<meta charset="UTF-8">
+<link rel="icon" type="image/icon" href="../img/icon.png">
+<link rel="stylesheet" type="text/css" href="../public/build/tailwind.css">
+<title>Vin. Site</title>
+<style>
+    @font-face {
+        font-family: 'Roboto';
+        src: url(../fonts/Roboto-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'Poison';
+        src: url(../fonts/Poison-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'TypoGrotesk';
+        src: url(../fonts/TypoGrotesk.otf);
+    }
+    .Poison{
+        font-family: Poison;
+    }
+    .Roboto{
+        font-family: Roboto;
+    }
+    .TypoGrotesk{
+        font-family: TypoGrotesk;
+    }
+</style>
+</head>
+<body>
+    <div class="info-page bg-primary h-screen max-h-full w-full pt-5 relative overflow-y-auto flex flex-col sm:flex-row items-center">
+        <span class="back w-6 sm:w-8 h-auto absolute top-3 left-3 sm:top-5 sm:left-5 transform transition ease-out duration-75 hover:scale-95 inline-block cursor-pointer">
+            <img src="../img/arrow.svg" alt="kembali" class="w-full h-auto">
+        </span>
+        <img src="../img/dokter2.png" alt="dokter" class="w-36 h-36 sm:w-48 sm:h-48 sm:pl-8 md:pl-12 lg:pl-16 md:w-56 md:h-56 lg:w-60 lg:h-60 2xl:w-80 2xl:h-80">
+        <div class="deskripsi w-4/5 h-auto sm:max-w-lg md:mx-auto pb-5 sm:px-5">
+
+            <div class="desrkripsi-wrap rounded-t-3xl rounded-b-2xl shadow-md">
+                <h2 class="bg-secondary pt-3 pb-6 text-center -mt-5 rounded-t-3xl text-white Roboto tracking-wider"></h2>
+
+                <div class="tentang bg-white rounded-2xl text-sm py-3 px-4 -mt-5 md:-mt-4 lg:-mt-5">
+                    <h3 class="font-bold">Tentang</h3>
+                    <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sed molestiae molestias tempora aliquid ipsam, perspiciatis, consequuntur quibusdam assumenda nisi quas earum, tenetur reiciendis illum cum aspernatur. Eum, qui blanditiis. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis mollitia blanditiis fugiat numquam voluptate. Porro iure cupiditate unde non omnis ipsum dolores, exercitationem doloremque, corporis nulla eligendi libero fugit maxime? <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minus in magnam atque debitis nisi voluptatum id ex praesentium cupiditate. Sint sed odio harum, dolore ea quidem labore vitae adipisci.</p>   
+                    <br>
+                    <h3 class="font-bold">Fasilitas</h3>
+                    <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magni sequi eos veniam delectus optio fugit consequuntur ex! Error delectus ullam quae sit! Enim id tempore mollitia non, fugiat sit!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+<script>
+let back = document.querySelector('.back');    
+
+let h2 = document.querySelector('h2');
+var info = sessionStorage.getItem("info");
+if(info == null){
+    document.location.href = '../pencarian/index.html';
+}
+h2.textContent = 'RS. '+info;
+    back.addEventListener('click',e=>{
+        e.preventDefault();
+        document.location.href = '../pencarian/index.html';
+    });
+</script>
+</body>
+</html>
