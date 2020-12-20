@@ -52,7 +52,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad sequi quisquam ipsam modi omnis beatae doloremque. Sunt dolore expedita eius quae, id odio cupiditate officia explicabo nesciunt a optio.</p>
                     </div>
                     <div class="btn-group flex items-center flex-row-reverse gap-2 mt-1 pr-2 pt-1.5 border-gray-500 border-t">
-                        <button class="btn-menuju btn-primary px-2 py-0.5 lg:py-1 transition ease-in-out duration-75 hover:bg-blue-700">MENUJU</button>
+                        <button class="btn-menuju btn-primary px-2 py-0.5 lg:py-1 transition ease-in-out duration-75 hover:bg-blue-700" data-info="Jl. Jend. Sudirman No.70, Kotabaru, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta">MENUJU</button>
                         <button class="btn-info btn-secondary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-gray-200" data-info="bethesda">INFO</button>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad sequi quisquam ipsam modi omnis beatae doloremque. Sunt dolore expedita eius quae, id odio cupiditate officia explicabo nesciunt a optio.</p>
                     </div>
                     <div class="btn-group flex items-center flex-row-reverse gap-2 mt-1 pr-2 pt-1.5 border-gray-500 border-t">
-                        <button class="btn-menuju btn-primary px-2 py-0.5 lg:py-1 transition ease-in-out duration-75 hover:bg-blue-700">MENUJU</button>
+                        <button class="btn-menuju btn-primary px-2 py-0.5 lg:py-1 transition ease-in-out duration-75 hover:bg-blue-700" data-info="Jl. Veteran No.184, Pandeyan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta">MENUJU</button>
                         <button class="btn-info btn-secondary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-gray-200" data-info="hidayatullah">INFO</button>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad sequi quisquam ipsam modi omnis beatae doloremque. Sunt dolore expedita eius quae, id odio cupiditate officia explicabo nesciunt a optio.</p>
                     </div>
                     <div class="btn-group flex items-center flex-row-reverse gap-2 mt-1 pr-2 pt-1.5 border-gray-500 border-t">
-                        <button class="btn-menuju btn-primary px-2 py-0.5 lg:py-1 transition ease-in-out duration-75 hover:bg-blue-700">MENUJU</button>
+                        <button class="btn-menuju btn-primary px-2 py-0.5 lg:py-1 transition ease-in-out duration-75 hover:bg-blue-700" data-info="Jl. Ipda Tut Harsono Jl. Melati Wetan No.53, Muja Muju, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta">MENUJU</button>
                         <button class="btn-info btn-secondary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-gray-200" data-info="happyland">INFO</button>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ad sequi quisquam ipsam modi omnis beatae doloremque. Sunt dolore expedita eius quae, id odio cupiditate officia explicabo nesciunt a optio.</p>
                     </div>
                     <div class="btn-group flex items-center flex-row-reverse gap-2 mt-1 pr-2 pt-1.5 border-gray-500 border-t">
-                        <button class="btn-menuju btn-primary px-2 py-0.5 lg:py-1 transition ease-in-out duration-75 hover:bg-blue-700">MENUJU</button>
+                        <button class="btn-menuju btn-primary px-2 py-0.5 lg:py-1 transition ease-in-out duration-75 hover:bg-blue-700" data-info="Jl. Doktor Sutomo No.10, Baciro, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta">MENUJU</button>
                         <button class=" btn-info btn-secondary px-2 py-0.5 transition ease-in-out duration-75 hover:bg-gray-200" data-info="parahita">INFO</button>
                     </div>
                 </div>
@@ -116,6 +116,15 @@
     back.addEventListener('click',e=>{
         e.preventDefault();
         document.location.href = '../index.html';
+    })
+
+    btnMenuju.forEach(i=>{
+        i.addEventListener('click',evt=>{
+            evt.preventDefault();
+            let info = i.getAttribute("data-info").toUpperCase();
+            sessionStorage.setItem("info", info);
+            window.location.href = '../map/index.html';
+        })
     })
 
     btnInfo.forEach(i=>{

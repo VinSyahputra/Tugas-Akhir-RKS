@@ -21,6 +21,14 @@ module.exports = {
         posion: ['Poison'],
         typoGrotesk : ['TypoGrotesk'],
       },
+      boxShadow: {
+        customTop: '0 -5px 5px -5px #333333',
+        customBottom: '0 5px 5px -5px #333333',
+        customRight: '5px 0 5px -5px #333333',
+        customLeft: '-5px 0 5px -5px #333333',
+        customAll: '5px 5px 5px #333333',
+        smCustomAll: '2px 2px 2px #333333',
+      },
     },
     
   },
