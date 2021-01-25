@@ -3,6 +3,7 @@
 SISTEM PENCARIAN RUMAH SAKIT TERDEKAT (CARUKIT) By Havindi Fahru 1800018274 - F
 
 Hasil tampilan di perangkat desktop
+<br>
 <center>
 <img src="Carukit IMG/home_desktop.jpg" alt="tampilan desktop">
 <img src="Carukit IMG/hasilPencarian_desktop.jpg" alt="hasil pencarian desktop">
@@ -12,15 +13,13 @@ Hasil tampilan di perangkat desktop
 <br>
 <br>
 Hasil tampilan di perangkat mobile
-<center>
+<br>
+<div style="display: flex; justify-content: center; flex-direction: row">
 <img src="Carukit IMG/home_mobile.jpg" alt="home mobile>
-</center>
-<center>
+
 <img src="Carukit IMG/hasilPencarian_mobile.jpg" alt="hasil pencarian mobile">
-</center>
-<center>
+
 <img src="Carukit IMG/info_mobile.jpg" alt="info mobile">
-</center>
-<center>
+
 <img src="Carukit IMG/map_mobile.jpg" alt="map mobile">
-</center>
+</div>
