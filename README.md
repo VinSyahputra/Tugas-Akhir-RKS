@@ -14,7 +14,13 @@ Hasil tampilan di perangkat desktop
 Hasil tampilan di perangkat mobile
 <center>
 <img src="Carukit IMG/home_mobile.jpg" alt="home mobile>
+</center>
+<center>
 <img src="Carukit IMG/hasilPencarian_mobile.jpg" alt="hasil pencarian mobile">
+</center>
+<center>
 <img src="Carukit IMG/info_mobile.jpg" alt="info mobile">
+</center>
+<center>
 <img src="Carukit IMG/map_mobile.jpg" alt="map mobile">
 </center>
