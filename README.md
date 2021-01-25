@@ -1,4 +1,5 @@
 # Tugas-Akhir-RKS
+<center>
 SISTEM PENCARIAN RUMAH SAKIT TERDEKAT (CARUKIT) By Havindi Fahru 1800018274 - F
 
 Hasil tampilan di perangkat desktop
@@ -12,7 +13,8 @@ Hasil tampilan di perangkat desktop
 <br>
 Hasil tampilan di perangkat mobile
 
-<img src="Carukit IMG/home_mobile.jpg" alt="home mobile">
+<img src="Carukit IMG/home_mobile.jpg" alt="home mobile>
 <img src="Carukit IMG/hasilPencarian_mobile.jpg" alt="hasil pencarian mobile">
 <img src="Carukit IMG/info_mobile.jpg" alt="info mobile">
 <img src="Carukit IMG/map_mobile.jpg" alt="map mobile">
+                                                      </center>
