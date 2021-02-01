@@ -1,7 +1,12 @@
 # Tugas-Akhir-RKS
 <center>
 SISTEM PENCARIAN RUMAH SAKIT TERDEKAT (CARUKIT) By Havindi Fahru 1800018274 - F
-
+  <br><br>
+<p>
+  Sistem ini dibuat menggunakan HTML, Tailwindcss, dan bahasa pemrograman Javascript. Sistem ini dapat bejalan di berbagai perangkat, seperti desktop maupun mobile. <br>
+  Berikut link wireframe & UI Desain dari Sistem yang dikembangkan : <br>
+  https://drive.google.com/drive/folders/1wPlB-WXPEKZdrsj6KlCwTCp1FCNL7gKc?usp=sharing
+</p>
 Hasil tampilan di perangkat desktop
 <br>
 <img src="Carukit IMG/home_desktop.jpg" alt="tampilan desktop">
